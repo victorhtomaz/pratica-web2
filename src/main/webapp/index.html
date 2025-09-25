@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática em web 2</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Formulario de frutas</h1>
+            <form action="fruta-fav" method="post">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome">
+                </div>
+                <div>
+                    <label for="fruta">Escolha uma ou mais frutas preferidas:</label>
+                    <ul>
+                        <li>
+                            <label for="banana">Banana</label>
+                            <input id="banana" type="checkbox" name="fruta" value="banana">
+                        </li>
+                        <li>
+                            <label for="laranja">Laranja</label>
+                            <input id="laranja" type="checkbox" name="fruta" value="laranja">
+                        </li>
+                        <li>
+                            <label for="tangerina">Tangerina</label>
+                            <input id="tangerina" type="checkbox" name="fruta" value="tangerina">
+                        </li>
+                        <li>
+                            <label for="abacate">Abacate</label>
+                            <input id="abacate" type="checkbox" name="fruta" value="abacate">
+                        </li>
+                        <li>
+                            <label for="manga">Manga</label>
+                            <input id="manga" type="checkbox" name="fruta" value="manga">
+                        </li>
+                        <li>
+                            <label for="uva-verde">Uva Verde</label>
+                            <input id="uva-verde" type="checkbox" name="fruta" value="uva-verde">
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
