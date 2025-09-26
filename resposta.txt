@@ -1,0 +1,8 @@
+6 - Qual a diferença, com relação ao escopo, entre ServletConfig e ServletContext.
+A diferença se da pelo acesso, enquanto o ServletConfig é dado por cada Servlet criado, um ServletContext é para toda a aplicação web, com o intuito de compartilhar informações.
+Como exemplo os parâmetros práticados: 
+-Um definido um init parameter para um Servlet, apenas ele terá acesso aquela configuração de parâmetro.
+-Já se definido com um context parameter pode ser utilizado por um ou mais Servlets.  
+
+7 - Faça com que a alteração seja lida pelos Servlets. O que você precisou fazer?
+Na versão utilizada do tomcat (v11.0), ao fazer a alteração e salvar o arquivo, os Servlets já realizavam a leitura com o valor atualizado.

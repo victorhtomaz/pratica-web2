@@ -11,4 +11,36 @@
 		<welcome-file>default.jsp</welcome-file>
 		<welcome-file>default.xhtml</welcome-file>
 	</welcome-file-list>
+	 <servlet>
+	 	<servlet-name>InitParametersTestServlet</servlet-name>
+	 	<servlet-class>br.pratica.servlets.parametrosEx.InitParametersTestServlet</servlet-class>
+	 	<init-param>
+	 		<param-name>dono</param-name>
+	 		<param-value>Osvaldo</param-value>
+	 	</init-param>
+	 	<init-param>
+	 		<param-name>animal</param-name>
+	 		<param-value>Cachorro</param-value>
+	 	</init-param>
+	 </servlet>
+	 <servlet>
+	 	<servlet-name>PContextParametersTestServlet</servlet-name>
+	 	<servlet-class>br.pratica.servlets.parametrosEx.PContextParametersTestServlet</servlet-class>
+	 </servlet>
+	 <servlet>
+	 	<servlet-name>SContextParametersTestServlet</servlet-name>
+	 	<servlet-class>br.pratica.servlets.parametrosEx.SContextParametersTestServlet</servlet-class>
+	 </servlet>
+	 <context-param>
+	 	<param-name>marca</param-name>
+	 	<param-value>fiat</param-value>
+	 </context-param>
+	 <context-param>
+	 	<param-name>modelo</param-name>
+	 	<param-value>uno</param-value>
+	 </context-param>
+	 <servlet-mapping>
+        <servlet-name>InitParametersTestServlet</servlet-name>
+        <url-pattern>/init-parameters-test</url-pattern>
+    </servlet-mapping>
 </web-app>
